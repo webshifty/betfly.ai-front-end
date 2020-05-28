@@ -10,10 +10,12 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
-import { GlobalStyle } from '../styles/global-styles';
+import { GlobalStyle } from 'styles/global-styles';
 
 import { HomePage } from './containers/HomePage/Loadable';
-import { NotFoundPage } from './containers/NotFoundPage/Loadable';
+import { NotFoundPage } from './components/NotFoundPage/Loadable';
+import { Login } from './containers/Login/index';
+import { Header } from './components/Header/index';
 
 export function App() {
   return (
@@ -24,9 +26,10 @@ export function App() {
       >
         <meta name="description" content="A React Boilerplate application" />
       </Helmet>
-
+      <Header />
       <Switch>
-        <Route exact path={process.env.PUBLIC_URL + '/'} component={HomePage} />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/signin" component={Login} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
