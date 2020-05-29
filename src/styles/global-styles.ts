@@ -25,5 +25,15 @@ export const GlobalStyle = createGlobalStyle`
   input, select {
     font-family: inherit;
     font-size: inherit;
+    padding: 10px;
+  }
+
+  .H1 {
+    padding: 10px;
+    color: red;
+  }
+
+  .matches-list__container {
+    padding: 2em 4em;
   }
 `;

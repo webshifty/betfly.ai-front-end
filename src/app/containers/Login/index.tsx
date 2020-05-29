@@ -47,7 +47,7 @@ export function Login(props: Props) {
   );
 }
 
-const SignInButton = styled.div`
+const SignInButton = styled.button`
 border-radius: 4px;
 font-size: 16px;
 font-weight: 700;

@@ -15,7 +15,7 @@ import { GlobalStyle } from 'styles/global-styles';
 import { HomePage } from './containers/HomePage/Loadable';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
 import { Login } from './containers/Login/index';
-import { Header } from './components/Header/index';
+import { Header } from './components/common/Header/index';
 
 export function App() {
   return (
